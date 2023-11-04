@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:firebase_app_installations/firebase_app_installations.dart';
 
 void main() {
   runApp(const MyApp());

@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -45,17 +48,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyA553np3TvR19VDqij2I1WdXHT9I8nm1Kg',
-    appId: '1:1021708879332:web:5f9ae0dae9dd0148ba73f1',
+    appId: '1:1021708879332:web:3fa410583b46dd9aba73f1',
     messagingSenderId: '1021708879332',
     projectId: 'soynote-aad8d',
     authDomain: 'soynote-aad8d.firebaseapp.com',
     storageBucket: 'soynote-aad8d.appspot.com',
-    measurementId: 'G-HGCYDPJ85L',
+    measurementId: 'G-M91YK32LPL',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyA8w19ZOKO6gY1MX3Xw6bB7yH4wT4kyz10',
-    appId: '1:1021708879332:android:8e571f76d9c02e47ba73f1',
+    appId: '1:1021708879332:android:5582647bd3c47492ba73f1',
     messagingSenderId: '1021708879332',
     projectId: 'soynote-aad8d',
     storageBucket: 'soynote-aad8d.appspot.com',
@@ -63,19 +66,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA0NaKRwLLRUe2nscxDCwVFXewsQRIbVmM',
-    appId: '1:1021708879332:ios:6ba0f57e4db11d89ba73f1',
+    appId: '1:1021708879332:ios:c527895c4258a2a7ba73f1',
     messagingSenderId: '1021708879332',
     projectId: 'soynote-aad8d',
     storageBucket: 'soynote-aad8d.appspot.com',
-    iosBundleId: 'com.example.soynote',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyA0NaKRwLLRUe2nscxDCwVFXewsQRIbVmM',
-    appId: '1:1021708879332:ios:0048f6cf9c0ddeedba73f1',
-    messagingSenderId: '1021708879332',
-    projectId: 'soynote-aad8d',
-    storageBucket: 'soynote-aad8d.appspot.com',
-    iosBundleId: 'com.example.soynote.RunnerTests',
+    iosBundleId: 'space.mori.soynote',
   );
 }

@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.soynote</string>
+	<string>space.mori.soynote</string>
 	<key>PROJECT_ID</key>
 	<string>soynote-aad8d</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1021708879332:ios:6ba0f57e4db11d89ba73f1</string>
+	<string>1:1021708879332:ios:c527895c4258a2a7ba73f1</string>
 </dict>
 </plist>

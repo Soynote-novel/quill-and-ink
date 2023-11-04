@@ -38,6 +38,12 @@ dependencies:
   bulma_min: ^0.9.3
   firebase_core: ^2.21.0
   change_app_package_name: ^1.1.0
+  firebase_analytics: ^10.6.3
+  firebase_auth: ^4.12.1
+  cloud_firestore: ^4.12.2
+  firebase_messaging: ^14.7.3
+  firebase_storage: ^11.4.1
+  firebase_app_installations: ^0.2.4+3
 
 dev_dependencies:
   flutter_test:

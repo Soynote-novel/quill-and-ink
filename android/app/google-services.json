@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1021708879332",
+    "project_id": "soynote-aad8d",
+    "storage_bucket": "soynote-aad8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021708879332:android:8e571f76d9c02e47ba73f1",
+        "android_client_info": {
+          "package_name": "com.example.soynote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8w19ZOKO6gY1MX3Xw6bB7yH4wT4kyz10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

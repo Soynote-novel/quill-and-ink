@@ -1,4 +1,4 @@
-package com.example.soynote
+package space.mori.soynote
 
 import io.flutter.embedding.android.FlutterActivity
 

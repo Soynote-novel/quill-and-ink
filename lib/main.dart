@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({
+  const MyHomePage({
     Key? key,
     required this.title,
     required this.analytics,

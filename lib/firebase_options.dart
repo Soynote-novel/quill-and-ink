@@ -70,6 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1021708879332',
     projectId: 'soynote-aad8d',
     storageBucket: 'soynote-aad8d.appspot.com',
+    iosClientId: '1021708879332-utsj6m07mkrsa05jotiuo8rkf4iig8o1.apps.googleusercontent.com',
     iosBundleId: 'space.mori.soynote',
   );
 }

@@ -10,6 +10,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:soynote/firebase_options.dart';
 import 'package:soynote/page/home.dart';
+import 'package:soynote/page/test1.dart';
 
 const primaryColor = Colors.lightGreen;
 
@@ -71,7 +72,7 @@ void showFlutterNotification(RemoteMessage message) {
   RemoteNotification? notification = message.notification;
   AndroidNotification? android = message.notification?.android;
 
-  if (notification != null && android != null && !kIsWeb) {
+  if (!kIsWeb && notification != null && android != null) {
       flutterLocalNotificationsPlugin.show(
         notification.hashCode,
         notification.title,
@@ -102,8 +103,13 @@ Future<void> main() async {
   }
 
   // ignore: unused_local_variable
-  final fcmToken = await messaging.getToken(vapidKey: 'BPcv5jKHuUvatdSnyldzC-JQqGNzwgweMSrtxoC4FmEQ3rZ-gW7Scatk9HPT9oCII1xnh8R-pTmGe5er17qgbOk');
-  print(fcmToken);
+  try {
+    final fcmToken = await messaging.getToken(vapidKey: 'BPcv5jKHuUvatdSnyldzC-JQqGNzwgweMSrtxoC4FmEQ3rZ-gW7Scatk9HPT9oCII1xnh8R-pTmGe5er17qgbOk');
+    print(fcmToken);
+  } catch(error) {
+    print("failed getToken");
+    print(error);
+  }
 
   runApp(const MyApp());
 }
@@ -121,7 +127,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => const HomePage())
+        GetPage(name: '/', page: () => const HomePage()),
+        GetPage(name: '/test1', page: () => const Test1())
       ],
     );
   }
